@@ -98,7 +98,8 @@ def semi_circle_hiltrans(zeta, D=1):
     greenF
     """
     sqr = np.sqrt(zeta**2 - D**2)
-    sqr = np.sign(sqr.imag) * sqr
+#     sqr = np.sign(sqr.imag) * sqr   # 내 계산상으로는, sqr,imag 의 부호를 곱하는 게 아니라, zeta.real의 부호를 곱해서 계산해야 함.(DMFT노트참조)
+    sqr = np.sign(zeta.real) * sqr
     return 2 * (zeta - sqr) / D**2
 
 

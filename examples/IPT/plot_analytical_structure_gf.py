@@ -117,3 +117,4 @@ ax.set_zlim3d([-1.3, 0.7])
 # I find it totally surprising how much information is contained in
 # each version of the Greens function and how it forces the complete
 # structure to obey it.
+plt.show()
