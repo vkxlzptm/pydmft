@@ -69,7 +69,7 @@ fort.*
 *.*o*
 !*org
 *.sum
-*.ipynb
+#*.ipynb
 *.pdf
 DIMER_*
 /doc/gen_modules
